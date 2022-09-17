@@ -1,0 +1,28 @@
+<div class="main">
+    <div class="barra-busqueda">
+        <input [(ngModel)]="rutinaABuscar" class="buscar" placeholder="Buscar rutinas">
+    </div>
+  <div class="card">
+      <div class="card-barra">
+          <h1 class="card-barra-texto1">Resultados de busqueda</h1>
+          <div class="card-barra-right">
+              <i class="fas fa-search card-barra-icono"></i>   
+              <p class="card-barra-texto2">Total:4</p>
+          </div>
+      </div>
+      <div class="card-contenido card-contenido-rutinas">
+        <div *ngFor="let rutina of rutinas | busquedaRutinaPipe : rutinaABuscar"  class="info-rutina">
+            <div class="info-rutina-left">
+                <p>{{rutina.nombreRutina}}</p>
+                <p class="card-barra-texto2">{{rutina.duracion}} minutos</p>                    
+            </div>
+            <p class="info-rutina-center">Por {{rutina.nombreCreador}} {{rutina.apellidoCreador}}</p>
+            <div class="info-rutina-right">
+                <!-- <i class="fas fa-pen card-barra-icono"></i>
+                <i class="fas fa-trash-alt card-barra-icono"></i> -->
+            </div>
+        </div>
+        
+      </div>
+  </div>
+</div>

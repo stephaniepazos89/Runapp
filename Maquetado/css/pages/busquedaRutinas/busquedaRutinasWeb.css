@@ -1,0 +1,17 @@
+@media (min-width: 769px){
+
+  .p-default, .p-web {  /*  Tamaño de "Resultados de busqueda"  */
+    font-size: 3.5rem;
+  }
+  .searchbar__input{
+    width: 68%;
+  }
+  .container__title{
+    font-size: 3rem;
+  }
+  .autor-web{
+    font-size: 2rem;
+  } 
+}
+
+  

@@ -1,0 +1,25 @@
+.icono-animado{
+  cursor: pointer;
+  transition: color 200ms linear,transform 200ms linear;
+}
+
+.icono-animado:hover{
+  transform: scale(1.1);
+}
+
+.fa-trash-alt {
+    color: rgb(184, 0, 0);
+  }
+
+.fa-trash-alt:hover{
+    color: rgb(228, 93, 93);    
+}
+
+.fa-pen{
+  color:rgb(108, 189, 27);
+}
+
+.fa-pen:hover{
+    color: green;
+}
+

@@ -1,0 +1,154 @@
+/*VER SI PODEMOS ARREGLAR ESTO*/
+
+@media (max-width: 768px){
+    #grupo-ejercicio{
+        display: none;
+    }    
+}
+
+@media (min-width: 401px){
+    .registro-actividad {
+        width: 60%;
+    }
+
+    .ventana{
+        margin-top: 30px;
+        width: 90%;
+    }
+
+    /* div.flex-container{
+        margin-bottom: 250px;
+    } */
+}
+
+label{
+    display: block;
+    margin: 0.3em 0em;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+}
+
+div>p{
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+p>span{
+    font-weight: 600;
+}
+
+#grupo-ejercicio{
+    margin-left: 31rem;
+    margin-top: 20px;
+    font-size: 2.3em;
+    color: var(--color-auxiliar1);
+}
+
+.check__input{
+    height: 20px;
+    width: 30px;
+    background-color: var(--color-primario);
+    
+}
+
+.checkbox-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+}
+
+.form-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.form-column{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 1em;
+}
+
+.seleccionar{
+    color:rgb(196, 192, 192);
+}
+
+@media (min-width: 769px){
+    .ventana{
+        width: 70%;
+    }
+
+    .form-content{
+        padding: 20px 50px;
+    }
+
+    .form-column{
+        width: 45%;
+    }
+
+    .form-column:first-child{
+        justify-content: flex-end;
+    }
+
+    input{
+        font-size: 1.1em;
+    }
+
+    .checkbox-container{
+        font-size: 1.5rem;
+    }
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-checkbotton{
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    margin: 1em 0;
+    gap: 0.5rem;
+}
+
+.registro-actividad{
+    flex-direction: column;
+    margin: 1em;
+    justify-content: space-between;
+    height: 75%;
+    width: 94%;
+}
+
+.subtitulo{
+    display: flex;
+    justify-content: space-between;
+    background-color: dimgrey;
+    font-size: 1.8em;
+    height: var(--height-div-rutina);
+    padding: 1rem;
+    align-items: center;
+}
+
+.subtitulo__h4,.subtitulo__p{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.subtitulo__h4{
+    font-size: 1.5em;
+}
+
+.subtitulo__p{
+    font-size: 1em;
+}
+
+#grupo-ejercicio{
+    margin-left: 16%;
+}
+
+

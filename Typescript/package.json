@@ -1,0 +1,32 @@
+{
+  "name": "eg-proyecto-ts",
+  "version": "1.0.0",
+  "description": "Proyecto de Ejemplo para Algo 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint --fix src/**/*.ts scripts/**/*.ts test/**/*.ts",
+    "clean": "rm -rf ./images && rm README.md && touch README.md",
+    "test:coverage": "npm test -- --coverage",
+    "test:badges": "npm run test:coverage  && jest-coverage-badges"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.4",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5",
+    "typescript-coverage-report": "^0.6.0"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.171",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "eslint": "^7.31.0",
+    "jest-coverage-badges": "^1.0.0",
+    "lodash": "^4.17.21",
+    "ts-node": "^10.1.0"
+  }
+}

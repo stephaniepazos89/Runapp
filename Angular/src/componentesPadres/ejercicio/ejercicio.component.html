@@ -1,0 +1,53 @@
+<section class="contenido-flex">
+  <header class="ventana-title">
+    <div class="header-informacion">
+          <h2 class="nombre"></h2>
+      </div>
+      <div class="header-informacion">
+          <i class="fas fa-stopwatch header-tiempo"></i>
+          <h3 class="header-tiempo"></h3>
+      </div>
+  </header>
+  <app-card> 
+  <div class="box-container">
+    <div class="box-container__actividad">
+      <label class="palabra">Actividad</label>
+      <select class="inputBase campo" name="actividad" [(ngModel)]="actividadElegida">
+        <option *ngFor="let actividad of actividadesConocidas" [ngValue]="actividad">{{actividad.nombre}}</option>
+      </select>
+    </div>
+    <div class="box-container__frecuencia">
+      <label class="palabra">Frecuencia cardíaca base</label>
+      <input [(ngModel)]="frecuenciaCardBase" type="number" name="frecuencia" class="inputBase" placeholder="Ingrese frecuencia cardiaca" required="required" />
+    </div>
+  </div>
+
+  <div class="box-container">
+
+    <div class="checkbox-container">
+      <input class="check__input" checked type="checkbox" [(ngModel)]="checkMarcado"/>
+      <h3>Con series</h3>
+    </div>
+
+    <div>
+      <label class="palabra">Minutos de descanso</label>
+      <input [(ngModel)]="minutosDeDescanso" type="number" name="minutos" class="inputBase" placeholder="Ingrese minutos" required="required" />
+    </div>
+
+    <div *ngIf="checkMarcado">
+      <label class="palabra">Cantidad de series</label>
+      <input [(ngModel)]="cantidadDeSeries" type="number" name="series" class="inputBase" placeholder="Ingrese series" required="required" />
+    </div>
+
+    <div *ngIf="!checkMarcado">
+      <label class="palabra">Minutos de trabajo</label>
+      <input [(ngModel)]="minutosDeTrabajo" type="number" class="inputBase" placeholder="Ingrese minutos de trabajo" required="required" />
+    </div>
+  </div>
+
+  <div class="posicion-botones">
+    <button class="button-secundario" (click)="redirigirCancelar()">Cancelar</button>
+    <button class="button-primario" (click)="agregarEjercicio()">Guardar</button>
+  </div>
+</app-card>
+</section>

@@ -1,0 +1,12 @@
+.card{
+     border-color: grey;
+     border-style: solid;
+     background-color: var(--color-cuaternario);
+     width: 100%;
+     min-width: 280px;
+     flex-wrap: wrap;
+     display: flex;
+     height: 100%;
+     max-width: 1300px;
+ }
+ 

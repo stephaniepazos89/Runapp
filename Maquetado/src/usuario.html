@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+        <script src="https://kit.fontawesome.com/14c6874853.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <title>Usuario - RunApp</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/shared/header.css">
+        <link rel="stylesheet" href="../css/shared/footer.css">
+        <link rel="stylesheet" href="../css/shared/body.css">
+        <link rel="stylesheet" href="../css/shared/card.css">
+        <link rel="stylesheet" href="../css/shared/inputBase.css">
+        <link rel="stylesheet" href="../css/shared/button.css">
+        <link rel="stylesheet" href="../css/shared/fuentes.css">
+        <link rel="stylesheet" href="../css/shared/gruposMusculares.css">
+        <link rel="stylesheet" href="../css/shared/headerTabletWeb.css">
+        <link rel="stylesheet" href="../css/shared/iconos.css">
+        <link rel="stylesheet" href="../css/pages/usuario/usuario.css">
+    </head>
+    <!-- HEADER -->
+    <body>
+        <header>
+            <h1 class="title">RunApp</h1>
+            <div class="menu">
+                <button class="desplegable">
+                    <i class="fas fa-bars icono"></i>
+                </button>
+                <nav class="menu-contenido">
+                    <a class="menu-link" href="./busquedaRutinas.html">Home</a>
+                    <a class="menu-link" href="./misRutinas.html">Mis Rutinas</a>
+                    <a class="menu-link" href="./usuario.html">Perfil</a>
+                    <a class="menu-link" href="../login.html">
+                        <i class="fas fa-sign-out-alt icono" id="logoff"></i>
+                    </a>
+                </nav>
+                <nav class="menu-web">
+                    <a class="menu-link-web" href="./busquedaRutinas.html">Home</a>
+                    <a class="menu-link-web" href="./misRutinas.html">Mis Rutinas</a>
+                    <a class="menu-link-web" href="./usuario.html">Perfil</a>
+                    <a class="menu-link-web" href="../login.html">
+                        <i id="logoff-web" class="fas fa-sign-out-alt icono"></i>
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <form onsubmit="return false" class="ventana">
+            <form class="card__content">
+                <header class="ventana-title">
+                    <div class="header-informacion">
+                        <img src="../assets/img/usuario.jpg">
+                        <h2 class="nombre">Nazareno Peloso</h2>
+                    </div>
+                    <div class="header-informacion">
+                        <i class="fas fa-stopwatch header-tiempo"></i>
+                        <h3 class="header-tiempo">170 minutos</h3>
+                    </div>
+                </header>
+                <div class="super-card">
+                    <div class="seccion">
+                        <div class="mis-datos">
+                            <h4 class="form-subtitulo">Mis datos personales</h4>
+                            <div class="form-section">
+                                <div class="inputSeparador">
+                                    <label class="inputLabel">Nombre y apellido</label>
+                                    <input class="inputBase campo" type="text">
+                                </div>
+                                <div class="flexRow">
+                                    <div class="flexColumn">
+                                        <div class="inputSeparador">
+                                            <label class="inputLabel">Username</label>
+                                            <input class="inputBase campo" type="text">
+                                        </div>
+                                        <div class="inputSeparador">
+                                            <label class="inputLabel">Frec. cardíaca en reposo</label>
+                                            <input class="inputBase campo" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="flexColumn">
+                                        <div class="inputSeparador">
+                                            <label class="inputLabel">Fecha de nacimiento</label>
+                                            <input class="inputBase campo" type="date">
+                                        </div>
+                                        <div class="inputSeparador">
+                                            <label class="inputLabel">Porcentaje de intensidad</label>
+                                            <input class="inputBase campo" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="form-subtitulo">Grupos musculares de preferencia</h4>
+                            <div class="form-section-grupoM">
+                                <input class="button__input" type="checkbox" id="Piernas">
+                                <label class="checkButton" for="Piernas">Piernas</label>
+                                <input class="button__input" type="checkbox" id="Hombros">
+                                <label class="checkButton" for="Hombros">Hombros</label>
+                                <input class="button__input" type="checkbox" id="Brazos">
+                                <label class="checkButton" for="Brazos">Brazos</label>
+                                <input class="button__input" type="checkbox" id="Pecho">
+                                <label class="checkButton" for="Pecho">Pecho</label>
+                                <input class="button__input" type="checkbox" id="Espalda">
+                                <label class="checkButton" for="Espalda">Espalda</label>
+                                <input class="button__input" type="checkbox" id="Gluteos">
+                                <label class="checkButton" for="Gluteos">Gluteos</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dias-de-entrenamiento">
+                        <h4 class="form-subtitulo">Dias de entrenamiento</h4>
+                        <div class="form-section">
+                            <div class="semana">
+                                <article class="dia">
+                                    <input class="button__input" type="checkbox" id="Lunes">
+                                    <label class="checkButton" for="Lunes">L</label>
+                                    <div class="tiempo-minutos">
+                                        <i class="fas fa-stopwatch header-tiempo"></i>
+                                        <h3 class="header-tiempo">Minutos</h3>
+                                    </div>
+                                    <input class="inputBase input-minutos campo" type="text">
+                                </article>
+                                <article class="dia">
+                                    <input class="button__input" type="checkbox" id="Martes">
+                                    <label class="checkButton" for="Martes">M</label>
+                                    <div class="tiempo-minutos">
+                                        <i class="fas fa-stopwatch header-tiempo"></i>
+                                        <h3 class="header-tiempo">Minutos</h3>
+                                    </div>
+                                    <input class="inputBase input-minutos campo" type="text">
+                                </article>
+                                <article class="dia">
+                                    <input class="button__input" type="checkbox" id="Miercoles">
+                                    <label class="checkButton" for="Miercoles">M</label>
+                                    <div class="tiempo-minutos">
+                                        <i class="fas fa-stopwatch header-tiempo"></i>
+                                        <h3 class="header-tiempo">Minutos</h3>
+                                    </div>
+                                    <input class="inputBase input-minutos campo" type="text">
+                                </article>
+                                <article class="dia">
+                                    <input class="button__input" type="checkbox" id="Jueves">
+                                    <label class="checkButton" for="Jueves">J</label>
+                                    <div class="tiempo-minutos">
+                                        <i class="fas fa-stopwatch header-tiempo"></i>
+                                        <h3 class="header-tiempo">Minutos</h3>
+                                    </div>
+                                    <input class="inputBase input-minutos campo" type="text">
+                                </article>
+                                <article class="dia">
+                                    <input class="button__input" type="checkbox" id="Viernes">
+                                    <label class="checkButton" for="Viernes">V</label>
+                                    <div class="tiempo-minutos">
+                                        <i class="fas fa-stopwatch header-tiempo"></i>
+                                        <h3 class="header-tiempo">Minutos</h3>
+                                    </div>
+                                    <input class="inputBase input-minutos campo" type="text">
+                                </article>
+                                <article class="dia">
+                                    <input class="button__input" type="checkbox" id="Sabado">
+                                    <label class="checkButton" for="Sabado">S</label>
+                                    <div class="tiempo-minutos">
+                                        <i class="fas fa-stopwatch header-tiempo"></i>
+                                        <h3 class="header-tiempo">Minutos</h3>
+                                    </div>
+                                    <input class="inputBase input-minutos campo" type="text">
+                                </article>
+                                <article class="dia">
+                                    <input class="button__input" type="checkbox" id="Domingo">
+                                    <label class="checkButton" for="Domingo">D</label>
+                                    <div class="tiempo-minutos">
+                                        <i class="fas fa-stopwatch header-tiempo"></i>
+                                        <h3 class="header-tiempo">Minutos</h3>
+                                    </div>
+                                    <input class="inputBase input-minutos campo" type="text">
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seccion-amigos">
+                        <h4 class="form-subtitulo">Amigos</h4>
+                        <div class="form-section">
+                            <label class="inputLabel">Posibles amigos</label>
+                            <div class="agregar-elemento">
+                                <select class="inputBase input-amigos campo">
+                                    <option>Sofia Martinez</option>
+                                    <option>Ezequiel Zapas</option>
+                                </select>
+                                <button class="button-agregar">
+                                    Agregar
+                                </button>
+                            </div>
+                            <section class="cards-amistad">
+                                <div class="card1">
+                                    <section class="minicard-informacion">
+                                        <img src="../assets/img/jo_jung_suk.jpg">
+                                        <div class="amistad">
+                                            <h3>Jo Jung Suk</h3>
+                                            <p>25 años / 50% de intensidad</p>
+                                        </div>
+                                        <i class="fas fa-trash-alt icono-animado"></i>
+                                    </section>
+                                    <section class="minicard-informacion">
+                                        <img src="../assets/img/kin_seul_gi.jpg">
+                                        <div class="amistad">
+                                            <h3>Kin Seul Gi</h3>
+                                            <p>23 años / 70% de intensidad</p>
+                                        </div>
+                                        <i class="fas fa-trash-alt icono-animado"></i>
+                                    </section>
+                                    <section class="minicard-informacion">
+                                        <img src="../assets/img/lim_ju_hwan.jpg">
+                                        <div class="amistad">
+                                            <h3>Lim Ju Hwan</h3>
+                                            <p>27 años / 80% de intensidad</p>
+                                        </div>
+                                        <i class="fas fa-trash-alt icono-animado"></i>
+                                    </section>
+                                </div>
+                                <div class="card2">
+                                    <section class="minicard-informacion">
+                                        <img src="../assets/img/na_bong_sun.jpg">
+                                        <div class="amistad">
+                                            <h3>Na Bong Sun</h3>
+                                            <p>34 años / 10% de intensidad</p>
+                                        </div>
+                                        <i class="fas fa-trash-alt icono-animado"></i>
+                                    </section>
+                                    <section class="minicard-informacion">
+                                        <img src="../assets/img/shin_hye_sun.jpeg">
+                                        <div class="amistad">
+                                            <h3>Shin Hye Sun</h3>
+                                            <p>40 años / 70% de intensidad</p>
+                                        </div>
+                                        <i class="fas fa-trash-alt icono-animado"></i>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="posicion-botones">
+                    <button class="button-cancelar">
+                        <a class="boton-sin-decoracion-cancelar" href="./usuario.html">Cancelar</a>
+                    </button>
+                    <button class="button-guardar">
+                        <a class="boton-sin-decoracion-guardar" href="./usuario.html">Guardar</a>
+                    </button>
+                </div>
+            </form>
+        </form>
+        <footer class="footer">
+            <i class="fab fa-facebook-square"></i>
+            <div>RunApp/2021</div>
+        </footer>
+    </body>
+</html>

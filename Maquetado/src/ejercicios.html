@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Icono del librito-->
+    <script src="https://kit.fontawesome.com/14c6874853.js" crossorigin="anonymous"></script>
+
+    <!--Font-family: Lato-sanserif-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet" />
+
+    <!--Font-familay: Fira Code monospace-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet" />
+
+    <!--Font-familay: Georama-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@600&family=Roboto:wght@400;500;900&display=swap"
+        rel="stylesheet" />
+
+    <title>Ejercicios - RunApp</title>
+
+   
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/shared/footer.css" />
+    <link rel="stylesheet" href="../css/shared/body.css" />
+    <link rel="stylesheet" href="../css/shared/header.css" />
+    <link rel="stylesheet" href="../css/shared/button.css" />
+    <link rel="stylesheet" href="../css/shared/inputBase.css" />
+    <link rel="stylesheet" href="../css/shared/headerTabletWeb.css" />
+    <link rel="stylesheet" href="../css/shared/card.css" />
+    <link rel="stylesheet" href="../css/shared/fuentes.css" />
+    <link rel="stylesheet" href="../css/pages/ejercicios/ejercicios.css" />
+    <link rel="stylesheet" href="../css/pages/rutinas/tamaños.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="title">RunApp</h1>
+        <div class="menu">
+            <button class="desplegable">
+                <i class="fas fa-bars icono"></i>
+            </button>
+            <nav class="menu-contenido">
+                <a class="menu-link" href="./busquedaRutinas.html">Home</a>
+                <a class="menu-link" href="./misRutinas.html">Mis Rutinas</a>
+                <a class="menu-link" href="./usuario.html">Perfil</a>
+                <a class="menu-link" href="../login.html">
+                    <i class="fas fa-sign-out-alt icono" id="logoff"></i>
+                </a>
+            </nav>
+            <nav class="menu-web">
+                <a class="menu-link-web" href="./busquedaRutinas.html">Home</a>
+                <a class="menu-link-web" href="./misRutinas.html">Mis Rutinas</a>
+                <a class="menu-link-web" href="./usuario.html">Perfil</a>
+                <a class="menu-link-web" href="../login.html">
+                    <i id="logoff-web" class="fas fa-sign-out-alt icono"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <p id="grupo-ejercicio"> <u>Isquiotibiales</u> <span>Abdominales</span></p>
+    <div class="flex-container">
+        <form class="ventana">
+            <div class="ventana-title">
+                <p class="p-default">Abdominales</p>
+                <div>
+                    <i class="fas fa-stopwatch"></i>
+                    <p class="subtitulo__p">24 Minutos</p>
+                </div>
+            </div>
+            
+            <section class="form-content">
+                <div class="form-column">
+                    <label class="inputLabel">Actividad</label>
+                    <select class="inputBase campo" name="estrategia-edicion">
+                        <option value="seleccionar" hidden selected >Seleccionar</option>
+                        <option value="abdominales">Abdominales</option>
+                        <option value="piernas">Piernas</option>
+                    </select>
+
+                    <label class="inputLabel">Frecuencia cardíaca base</label>
+                    <input class="inputBase campo" type="text" placeholder="Ingresar">
+                </div>
+
+                <div class="form-column">
+                    <div class="checkbox-container">
+                        <input class="check__input" checked type="checkbox" />
+                        <h3>Con series</h3>
+                    </div>
+                    <label class="inputLabel">Minutos de descanso</label>
+                    <input class="inputBase campo" type="text" placeholder="Ingresar"/>
+                
+                    <label class="inputLabel">Cantidad de series</label>
+                    <input class="inputBase campo" type="text" placeholder="Ingresar"/>
+                </div>
+            </section>
+
+            <div class="posicion-botones">
+                <button class="button-cancelar">
+                    <a class="boton-sin-decoracion-cancelar" href="./misRutinas.html">Cancelar</a>
+                    </button>
+                <button class="button-guardar">
+                    <a class="boton-sin-decoracion-guardar" href="./misRutinas.html">Guardar</a>
+                </button>
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        <i class="fab fa-facebook-square"></i>
+        <div>RunApp/2021</div>
+    </footer>
+</body>
+
+</html>

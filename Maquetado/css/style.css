@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    min-height: 100%;
+    position: relative;
+}
+
+@media(max-width:400px){
+    body{
+        min-width: 360px;
+    }
+}
+
+:root{
+    --color-primario:#003A64;
+    --color-secundario:#54A2D2;
+    --color-terciario:#A9CEE8;
+    --color-cuaternario:#E1ECF0;
+    --color-quinario: white;
+    --color-auxiliar1:rgb(111, 133, 133);
+}
+
+
+
+
+
+

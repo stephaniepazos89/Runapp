@@ -1,0 +1,158 @@
+<div class="main">
+    <section class="card">
+        <header class="card-barra">
+            <div class="header-informacion">
+                <img src="../assets/img/usuario.jpg">
+                <h1 class="card-barra-texto1">Nazareno Peloso</h1>
+            </div>
+            <div class="header-informacion">
+                <i class="fas fa-stopwatch card-barra-icono"></i>
+                <h1 class="card-barra-texto2">170 minutos</h1>
+            </div>
+        </header>
+        <div class="card-contenido card-contenido-usuario">
+            <div class="box-container mis-datos">
+                <h4 class="form-subtitulo">Mis datos personales</h4>
+                <div class="form-content-misDatos">
+                    <div class="form-section">
+                        <div class="inputSeparador">
+                            <label class="inputLabel">Nombre y apellido</label>
+                            <input class="inputBase campo" type="text" [(ngModel)]="usuario.nombreApellido" name="datos" placeholder="Ingrese nombre y apellido" required="required">
+                        </div>
+                    </div>
+                    <div class="flexRow">
+                        <div class="flexColumn">
+                            <div class="inputSeparador">
+                                <label class="inputLabel">Nombre de usuario</label>
+                                <input class="inputBase campo" type="text" [(ngModel)]="usuario.username" name="username" placeholder="Ingrese nombre de usuario" required="required">
+                            </div>
+                            <div class="inputSeparador">
+                                <label class="inputLabel">Frec. cardíaca en reposo</label>
+                                <input class="inputBase campo" type="text" [(ngModel)]="usuario.frecuenciaCardiacaReposo" name="frecuencia" placeholder="Ingrese frecuencia" required="required">
+                            </div>
+                        </div>
+                        <div class="flexColumn">
+                            <div class="inputSeparador">
+                                <label class="inputLabel">Fecha de nacimiento</label>
+                                <input class="inputBase campo" type="date" [(ngModel)]="fecha" name="fecha" required="required">
+                            </div>
+                            <div class="inputSeparador">
+                                <label class="inputLabel">Porcentaje de intensidad</label>
+                                <input class="inputBase campo" type="text" [(ngModel)]="usuario.porcentajeDeIntensidadDeEntrenamiento" name="porcentaje" placeholder="Ingrese porcentaje" required="required">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="form-subtitulo">Grupos Musculares de preferencia</h4>
+                <div class="form-section-grupoM">
+                    <input (change)="agregarGrupoPreferido('Piernas')" class="button__input" type="checkbox" id="Piernas">
+                    <label class="checkButton" for="Piernas">Piernas</label>
+                    <input (change)="agregarGrupoPreferido('Hombros')" class="button__input" type="checkbox" id="Hombros">
+                    <label class="checkButton" for="Hombros">Hombros</label>
+                    <input (change)="agregarGrupoPreferido('Brazos')" class="button__input" type="checkbox" id="Brazos">
+                    <label class="checkButton" for="Brazos">Brazos</label>
+                    <input (change)="agregarGrupoPreferido('Pecho')" class="button__input" type="checkbox" id="Pecho">
+                    <label class="checkButton" for="Pecho">Pecho</label>
+                    <input (change)="agregarGrupoPreferido('Espalda')" class="button__input" type="checkbox" id="Espalda">
+                    <label class="checkButton" for="Espalda">Espalda</label>
+                    <input (change)="agregarGrupoPreferido('Gluteos')" class="button__input" type="checkbox" id="Gluteos">
+                    <label class="checkButton" for="Gluteos">Gluteos</label>
+                </div>
+
+            </div>
+            <div class="box-container">
+                <h4 class="form-subtitulo">Dias de entrenamiento</h4>
+                <div class="dias-de-entrenamiento-content semana">
+                    <article class="dia">
+                        <input class="button__input" type="checkbox" id="Lunes">
+                        <label class="checkButton checkButton-dia" for="Lunes">L</label>
+                        <div class="tiempo-minutos">
+                            <i class="fas fa-stopwatch header-tiempo"></i>
+                            <h3 class="header-tiempo">Minutos</h3>
+                        </div>
+                        <input class="inputBase campo tamaño-input" [(ngModel)]="usuario.diasDeEntrenamiento[0].minutosDeEntrenamiento" name="minutos" type="number">
+                    </article>
+                    <article class="dia">
+                        <input class="button__input" type="checkbox" id="Martes">
+                        <label class="checkButton checkButton-dia" for="Martes">M</label>
+                        <div class="tiempo-minutos">
+                            <i class="fas fa-stopwatch header-tiempo"></i>
+                            <h3 class="header-tiempo">Minutos</h3>
+                        </div>
+                        <input class="inputBase campo tamaño-input" [(ngModel)]="usuario.diasDeEntrenamiento[1].minutosDeEntrenamiento" name="minutos" type="number">
+                    </article>
+                    <article class="dia">
+                        <input class="button__input" type="checkbox" id="Miercoles">
+                        <label class="checkButton checkButton-dia" for="Miercoles">M</label>
+                        <div class="tiempo-minutos">
+                            <i class="fas fa-stopwatch header-tiempo"></i>
+                            <h3 class="header-tiempo">Minutos</h3>
+                        </div>
+                        <input class="inputBase campo tamaño-input" [(ngModel)]="usuario.diasDeEntrenamiento[2].minutosDeEntrenamiento" name="minutos" type="number">
+                    </article>
+                    <article class="dia">
+                        <input class="button__input" type="checkbox" id="Jueves">
+                        <label class="checkButton checkButton-dia" for="Jueves">J</label>
+                        <div class="tiempo-minutos">
+                            <i class="fas fa-stopwatch header-tiempo"></i>
+                            <h3 class="header-tiempo">Minutos</h3>
+                        </div>
+                        <input class="inputBase campo tamaño-input" [(ngModel)]="usuario.diasDeEntrenamiento[3].minutosDeEntrenamiento" name="minutos" type="number">
+                    </article>
+                    <article class="dia">
+                        <input class="button__input" type="checkbox" id="Viernes">
+                        <label class="checkButton checkButton-dia" for="Viernes">V</label>
+                        <div class="tiempo-minutos">
+                            <i class="fas fa-stopwatch header-tiempo"></i>
+                            <h3 class="header-tiempo">Minutos</h3>
+                        </div>
+                        <input class="inputBase campo tamaño-input" [(ngModel)]="usuario.diasDeEntrenamiento[4].minutosDeEntrenamiento" name="minutos" type="number">
+                    </article>
+                    <article class="dia">
+                        <input class="button__input" type="checkbox" id="Sabado">
+                        <label class="checkButton checkButton-dia" for="Sabado">S</label>
+                        <div class="tiempo-minutos">
+                            <i class="fas fa-stopwatch header-tiempo"></i>
+                            <h3 class="header-tiempo">Minutos</h3>
+                        </div>
+                        <input class="inputBase campo tamaño-input" [(ngModel)]="usuario.diasDeEntrenamiento[5].minutosDeEntrenamiento" name="minutos" type="number">
+                    </article>
+                    <article class="dia">
+                        <input class="button__input" type="checkbox" id="Domingo">
+                        <label class="checkButton checkButton-dia" for="Domingo">D</label>
+                        <div class="tiempo-minutos">
+                            <i class="fas fa-stopwatch header-tiempo"></i>
+                            <h3 class="header-tiempo">Minutos</h3>
+                        </div>
+                        <input class="inputBase campo tamaño-input" [(ngModel)]="usuario.diasDeEntrenamiento[6].minutosDeEntrenamiento" name="minutos" type="number">
+                    </article> 
+                </div>
+            </div>
+            <div class="box-container">
+                <h4 class="form-subtitulo">Amigos</h4>
+                <label class="inputLabel">Posibles amigos</label>
+                <div class="form-section">
+                    <div class="agregar-elemento">
+                        <select [(ngModel)]="posibleAmigoSeleccionado" name="posibleAmigoSeleccionado" class="inputBase input-amigos campo">
+                            <option *ngFor="let amigo of posiblesAmigos" [ngValue]="amigo">{{amigo.nombreUsuario}} {{amigo.apellido}}</option>
+                        </select>
+                        <button (click)="agregarAmigo()" class="button-agregar">
+                            Agregar
+                        </button>
+                    </div>
+                    <section *ngFor="let amigo of listaDeAmigos" class="card-amistad">
+                        <div class="info-rutina minicard-informacion">
+                            <img src="../assets/img/jo_jung_suk.jpg">
+                            <div class="amistad">
+                                <h3>{{amigo.nombreUsuario}} {{amigo.apellido}}</h3>
+                                <p>25 años / 50% de intensidad</p>
+                            </div>
+                            <i (click)="eliminarAmigo(amigo)" class="fas fa-trash-alt icono-animado"></i>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>

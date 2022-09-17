@@ -1,0 +1,179 @@
+
+form{
+    max-width: 769px;
+}
+
+label{
+    display: block;
+    margin: 0.3em 0em;
+}
+
+div>p {
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+.iconos-corazon-tacho{
+    width:45%;
+}
+
+table{
+    border: 0.1em solid gray;
+    border-collapse: collapse;
+    flex-grow: 1;
+    font-size: 13px;
+    text-align: center;
+}
+
+table,.rutina-estadisticas{
+    align-self: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+td{
+    height: 2.5em;
+    padding: 0.5em;
+}
+
+.button-mas>i{
+    font-size: 20px;
+}
+
+.contenedor-tiempo{
+    display: flex;
+    justify-content:flex-end ;
+}
+
+.form__section--principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rutina-subtitulo{
+    display: flex;
+    justify-content: space-between;
+    background-color: dimgrey;
+    font-size: 1.8em;
+    height: var(--height-div-rutina);
+    padding: 1rem;
+    align-items: center;
+}
+
+.rutina-subtitulo__h4,.rutina-subtitulo__p{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.rutina-subtitulo__h4{
+    font-size: 1.5em;
+}
+
+.rutina-subtitulo__p{
+    font-size: 1em;
+}
+
+/*REVISAR ESTO*/
+.rutina-ejercicios{
+    height:35%
+}
+
+.rutina-registro,.rutina-ejercicios{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: calc(769px/2);
+}
+
+.ejercicios__h2{
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.rutina-estadisticas,.button-mas-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.rutina-estadisticas{
+    margin-top: 0.5em;
+}
+.rutina-estadisticas__p{
+    margin:0.5em;
+    font-size: 1.2em;
+    font-weight: 600;
+    width: 35%;
+}
+
+.grupos-flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.gruposMusculares__div{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 2rem;
+    margin-right: 9em;
+}
+
+.gruposMusculares__div--card{
+    background-color: var(--color-primario);
+    height: 2.2em;
+    width: 6em;
+    border-radius: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7em;
+    color: var(--color-quinario);
+    font-family: 'Roboto', sans-serif;
+}
+
+.rutinas-subtitulo{
+    font-size: 2.4rem;
+    margin-bottom: 5px;
+}
+
+.table-head__fila{
+    font-weight: 700;
+    background-color: var(--color-primario);
+    color: var(--color-quinario);
+    font-size: 1.5em;
+}
+
+.table-body__fila{
+    text-align: center;
+    border-color: black;
+    background-color: #f2f4f7;
+    font-size: 1.3em;
+}
+
+.table-head__fila,.table-body__fila{
+    font-family:Roboto,sans-serif;
+}
+
+.fa-heartbeat, .fa-stopwatch{
+    font-size: 2.5rem;
+}
+
+.fa-heartbeat{
+    color: rgb(184, 0, 0);
+}
+
+.button-mas{
+    font-size: 1rem;
+    border-radius: 1rem;
+
+}
+
+.form-section-grupoM{
+    gap: 0.3rem;
+    justify-content: center;
+}

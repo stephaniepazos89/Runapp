@@ -1,0 +1,102 @@
+/* .ventana-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  background-color: var(--color-auxiliar1);
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  color: var(--color-quinario);
+} */
+.container {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  background-color: var(--color-quinario);
+  margin: 3rem 3rem 0;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  font-size: 2rem;
+  border: 0.3rem solid var(--color-primario);
+  color: black;
+  text-decoration: none; 
+}
+.container__contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__separador-web {
+  display: flex;
+  flex-direction: column;
+}
+.container__contenido-iconos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 1rem;
+  font-size: 1.3em;
+}
+.container__contenido-title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.container__title {
+  margin-right: 0.5em;
+  font-size: 3rem;
+}
+.searchbar {
+  background-color: var(--color-terciario);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 1em;
+  margin-bottom: 0em;
+}
+.searchbar__input {
+  width: 100%;
+  height: 5rem;
+  border-bottom-left-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  border-width: 0;
+}
+.buscar {
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1.2rem;
+  border-color: var(--color-primario);
+  border-bottom-right-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  background-color: var(--color-primario);
+  color: var(--color-quinario);
+}
+.fa-search{
+  margin-right: 0.2rem;
+  font-size: 2.6rem;
+}
+#iconoMini{
+  font-size: 1.5rem;
+
+}
+.fa-pen{
+  color: rgb(104, 104, 104);
+}
+
+::placeholder {
+  font-size: 2.2rem;
+  position: relative;
+  left: 0.9em;
+  top: 0.15em;
+}
+
+@media (max-width:400px) {
+  .autor-web, .p-web{
+    display: none;
+  }
+  
+}

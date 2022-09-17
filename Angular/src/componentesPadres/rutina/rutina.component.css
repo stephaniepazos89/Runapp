@@ -1,0 +1,204 @@
+.mensajeErroneo {
+  background-color: pink;
+  height: 35px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  font-size: 1.2em;
+}
+
+.contenido-flex {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  max-width: 800px;
+}
+
+.contenedor-tiempo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  margin-left: auto;
+}
+
+#contenedor{
+  font-size: 1.3em;
+  color: rgb(184, 0, 0);
+}
+
+#contenedor:hover{
+  transform: scale(1.1);
+  color: rgb(216, 114, 114);
+}
+
+.ventana-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey;
+  color: var(--color-quinario);
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  padding: 5px;
+  min-width: 280px;
+}
+
+.header-informacion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.box-container {
+  min-width: calc(769px/2);
+  flex-grow: 1;
+  height: 301px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 1em;
+}
+
+.palabra {
+  font-size: 1.5rem;
+  margin-left: 7px;
+  margin-bottom: 10px;
+}
+
+.form-subtitulo {
+  padding-bottom: 1.5rem;
+  margin-top: 1rem;
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.form-section-grupoM {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 3rem;
+}
+
+.nombre {
+  font-size: 2em;
+  margin: 0 0.3em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.fas {
+  width: 20%;
+  height: auto;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: var(--color-primario);
+  border-left: 0.8em;
+}
+
+.grupos-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.rutina-estadisticas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.1em;
+  margin-top: 0.5em;
+}
+
+.button-mas {
+  padding: 0.5rem 1rem;
+}
+
+.rutina-estadisticas__p {
+  margin: 0.5em;
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 35%;
+}
+
+.table-head__fila {
+  font-weight: 700;
+  background-color: var(--color-primario);
+  color: var(--color-quinario);
+  font-size: 1.5em;
+  padding-left: 0.5em;
+}
+
+.table,
+.rutina-estadisticas {
+  align-self: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.table {
+  border: 0.1em solid gray;
+  border-collapse: collapse;
+}
+
+.table__td,
+.table__tr {
+  height: 2.5em;
+  font-size: 1.3em;
+}
+
+.table__td {
+  text-align: center;
+}
+
+.fa-heartbeat,
+.fa-stopwatch {
+  font-size: 2.5rem;
+}
+
+.fa-heartbeat {
+  color: rgb(184, 0, 0);
+}
+
+/* CSS del marcador de grupos musculares */
+#marcador:checked~label[for="marcador"] {
+  background-color: var(--color-primario);
+  color: var(--color-quinario);
+  font-weight: bold;
+}
+
+.button__input {
+  display: none;
+}
+
+.checkButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  cursor: pointer;
+  background-color: var(--color-quinario);
+  border-style: solid;
+  border-color: var(--color-primario);
+  border-width: 0.2rem;
+  border-radius: 4rem;
+  color: var(--color-primario);
+  padding: 0.5rem 0.1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 200ms linear;
+}
+
+.checkButton:hover {
+  transform: scale(1.1);
+
+}

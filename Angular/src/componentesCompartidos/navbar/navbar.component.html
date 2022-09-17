@@ -1,0 +1,31 @@
+<div class="my-header" *ngIf="noEsLogin()"> 
+  <h1 class="title">RunApp</h1>
+  <div class="menu" >
+      <div *ngIf="pantallaMobile(); then thenBlock else elseBlock"></div>
+      <ng-template #thenBlock>
+        <button class="desplegable">
+            <i class="fas fa-bars icono"></i>
+        </button>
+        <nav class="menu-contenido">
+            <a class="menu-link" routerLink="../busquedaRutinas">Home</a>
+            <a class="menu-link" routerLink="../misRutinas">Mis Rutinas</a>
+            <a class="menu-link" routerLink="../usuario">Mi Perfil</a>
+            <a class="menu-link" routerLink="./login">
+                <i class="fas fa-sign-out-alt icono" id="logoff"></i>
+            </a>
+        </nav>
+      </ng-template>
+      <ng-template #elseBlock>
+        <nav class="menu-web">
+            <a class="menu-link-web" routerLink="../busquedaRutinas">Home</a>
+            <a class="menu-link-web" routerLink="../misRutinas">Mis Rutinas</a>
+            <a class="menu-link-web" routerLink="../usuario">Mi Perfil</a>
+            <a class="menu-link-web" routerLink="./login">
+                <i class="fas fa-sign-out-alt icono" id="logoff-web" ></i>
+            </a>
+            
+        </nav>
+      </ng-template>
+      
+  </div>
+</div>

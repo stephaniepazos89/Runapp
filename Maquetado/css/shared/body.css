@@ -1,0 +1,7 @@
+body {
+    background:var(--color-cuaternario);
+    font-family: "Roboto",sans-serif;
+    justify-content: center;
+    margin-bottom: 120px;
+    height: 100%;
+}

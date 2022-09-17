@@ -1,0 +1,46 @@
+.form-section-grupoM{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap:3rem;
+  }
+
+#Piernas:checked ~ label[for="Piernas"],
+#Hombros:checked ~ label[for="Hombros"],
+#Brazos:checked ~ label[for="Brazos"],
+#Pecho:checked ~ label[for="Pecho"],
+#Espalda:checked ~ label[for="Espalda"],
+#Gluteos:checked ~ label[for="Gluteos"]
+ {
+  background-color: var(--color-primario);
+  color: var(--color-quinario);
+  font-weight: bold;
+}
+
+.button__input{
+    display: none;
+  }
+  
+  .checkButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    cursor: pointer;
+    background-color: var(--color-quinario);
+    border-style: solid;
+    border-color: var(--color-primario);
+    border-width: 0.2rem;
+    border-radius: 4rem;
+    color: var(--color-primario);
+    padding: 0.5rem 0.1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 200ms linear;
+  }
+
+.checkButton:hover{
+  transform: scale(1.1);
+  
+}

@@ -1,0 +1,80 @@
+header {
+  padding: 3rem 0;
+  height: 124px;
+  background-color: var(--color-primario);
+  color: var(--color-cuaternario);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.title {  /*  Titulo del header  */
+  font-size: 2em;
+  font-family: "Lato", sans-serif;
+  margin-left: 3rem;
+}
+
+.icono {  /*  Icono del menu desplegable  */
+  color: var(--color-cuaternario);
+  font-size: 2em;
+}
+#logoff {  /*  Icono para salir a Login  */
+  font-size: 1.1em;
+}
+
+#logoff-web {  /*  Icono para salir a Login en vista Tablet y Web  */
+  font-size: 1.1em;
+}
+.menu-link {
+  width: 100%;
+}
+
+.desplegable {  /*  Boton para abrir el menu desplegable  */
+  background-color: var(--color-primario);
+  color: var(--color-cuaternario);
+  padding: 1.6rem;
+  font-size: 1.6rem;
+  border: none;
+  margin-right: 2rem;
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-contenido {  /*  El menu desplegable  */
+  display: none;
+  position: absolute;
+  background-color: var(--color-primario);
+  right: 0;
+  z-index: 1;
+}
+
+.menu-contenido .menu-link {
+  color: var(--color-cuaternario);
+  padding: 1.2rem 1.42rem;
+  text-decoration: none;
+  /* display: block; */
+}
+
+.menu-contenido .menu-link:hover,
+.menu:hover .desplegable {  /*  Esto hace que las opciones del menu desplegable cambien de color al seleccionarlas  */
+  background-color: #012c4b;
+}
+
+.menu:hover .menu-contenido {
+  display: block;
+}
+
+/*----------VISTA MOBILE----------*/
+
+@media (max-width: 400px) {
+  .menu-web {  /*  Para que las opciones de la vista tablet/web no se vean  */
+    display: none;
+  }
+  .menu-contenido .menu-link{  /*  Lo movi acá para que pueda ser sobreescrito por las otras vistas  */
+    display:block;
+  }
+}

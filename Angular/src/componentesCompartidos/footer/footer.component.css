@@ -1,0 +1,17 @@
+.footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    font-size: 2rem;
+    height:var(--footer-height);
+    min-width: 280px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color: var(--color-primario);
+    color:var(--color-quinario); 
+    
+}
+

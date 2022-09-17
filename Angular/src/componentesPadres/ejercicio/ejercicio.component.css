@@ -1,0 +1,80 @@
+.checkbox-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.4em;
+}
+
+.check__input{
+    height: 20px;
+    width: 30px;
+    background-color: var(--color-primario);
+    
+}
+
+.contenido-flex{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    max-width: 836px;
+}
+
+.ventana-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    color: var(--color-quinario);
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    padding: 5px;
+    min-width: 280px;
+}
+
+.header-informacion{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap:1.5rem;
+}
+
+.box-container{
+    min-width: calc( 769px/2 );
+    flex-grow: 1;
+    height: 301px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 1em;
+}
+
+.box-container__actividad{
+    position: relative;
+    top: 38px;
+}
+
+.box-container__frecuencia{
+    position: relative;
+    top: 20px;
+}
+
+.header-tiempo {
+    font-size: 1.8rem;
+}
+
+.nombre {
+    font-size: 2em;
+    margin: 0 0.3em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.palabra{
+    font-size: 1.5rem;
+    margin-left: 7px;
+    margin-bottom: 10px;
+}
+

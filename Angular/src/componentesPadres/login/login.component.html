@@ -1,0 +1,24 @@
+<form class="login-form">
+    <section class="container">
+
+        <div class="inicio">
+            <img src="../../assets/images/Logo.svg" alt="logo" id="logo">
+            <h1 class="titulo">RunApp</h1>
+        </div>
+        <div class="form_div">
+            <label class="inputLabel">Usuario</label>
+            <div class="campo">
+                <i class="fas fa-user"></i>
+                <input type="text" [(ngModel)]="usuario" name="usuario" class="inputBase" placeholder="Usuario" required="required" />
+            </div>
+
+            <label class="inputLabel">Contraseña</label>
+            <div class="campo">
+                <i class="fas fa-key"></i>
+                <input type="password" [(ngModel)]="password" name="password" class="inputBase" placeholder="Contraseña" required="required" />
+            </div>
+
+            <button style="align-self:center" class="button-login" (click)="redirigir()">Ingresar</button>
+        </div>
+    </section>
+</form>

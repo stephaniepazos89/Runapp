@@ -1,0 +1,85 @@
+<section class="contenido-flex">
+    <header class="ventana-title">
+        <div class="header-informacion">
+            <h2 class="nombre">{{rutina.nombreRutina}}</h2>
+        </div>
+        <div class="header-informacion">
+            <h3 class="nombre">Por {{rutina.creador.nombreUsuario}} {{rutina.creador.apellido}}</h3>
+        </div>
+    </header>
+    <app-card>
+        <div class="box-container">
+            <div>
+                <label class="palabra">Nombre</label>
+                <input type="text" name="nombre" class="inputBase" placeholder="Ingrese nombre" required="required" [(ngModel)]="rutina.nombreRutina" />
+                <div *ngIf="rutina.tieneMensajesErroneos('campoNombre')" class="mensajeErroneo">
+                    {{rutina.erroresSobre('campoNombre')}}
+                </div>
+            </div>
+            <div>
+                <label class="palabra">Descripcion</label>
+                <input type="text" name="descripcion" class="inputBase" placeholder="Ingrese descripcion" required="required" [(ngModel)]="rutina.descripcion" />
+                <div *ngIf="rutina.tieneMensajesErroneos('campoDescripcion')" class="mensajeErroneo">
+                    {{rutina.erroresSobre('campoDescripcion')}}
+                </div>
+            </div>
+            <div>
+                <label class="palabra">Estrategia de edicion</label>
+                <select class="inputBase campo" name="estrategia-edicion" [(ngModel)]="rutina.criterioDeEdicion">
+          <option *ngFor="let criterio of criteriosDeEdicion" [ngValue]="criterio">{{criterio}}</option>
+        </select>
+                <div *ngIf="rutina.tieneMensajesErroneos('campoCriterioEdicion')" class="mensajeErroneo">
+                    {{rutina.erroresSobre('campoCriterioEdicion')}}
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container">
+            <p class="form-subtitulo">Ejercicios</p>
+            <table class="table" border="1">
+                <thead>
+                    <tr class="table__tr">
+                        <td class="table-head__fila">Nombre</td>
+                        <td class="table-head__fila">Minutos</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table__tr" *ngFor="let ejercicio of rutina.ejercicios">
+                        <td href="/runapp-grupo3/src/rutinas.html" class="table__td">{{ejercicio.nombre()}}</td>
+                        <td class="table__td">
+                            <div class="contenedor-tiempo">
+                                <p id="minutos">{{ejercicio.duracion()}}</p>
+                                <i class="fas fa-trash-alt" id="contenedor" (click)="eliminarEjercicio(ejercicio)"></i>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="rutina-estadisticas">
+                <i class="fas fa-heartbeat"></i>
+                <p class="rutina-estadisticas__p">{{rutina.frecuenciaCardiacaBase() | number: '1.0-2'}} PPM</p>
+                <i class="fas fa-stopwatch"></i>
+                <p class="rutina-estadisticas__p">{{rutina.duracion()}} '</p>
+                <div>
+                    <div class="button-mas-container">
+                        <button (click)="sumarEjercicio()" class="button-mas">+</button>
+                    </div>
+                </div>
+            </div>
+            <p class="form-subtitulo">Grupos Musculares</p>
+            <div class="grupos-flex">
+                <div class="form-section-grupoM">
+                    <div *ngFor="let grupo of rutina.gruposMuscularesQueEntrena()">
+                        <input class="button__input" type="checkbox" id="marcador">
+                        <label class="checkButton" for="marcador">{{grupo}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="posicion-botones">
+            <!-- <button class="button-secundario" (click)="redirigirCancelar()">Cancelar</button> -->
+            <button class="button-primario" (click)="guardarRutina()">Guardar</button>
+        </div>
+    </app-card>
+</section>

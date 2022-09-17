@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontAwesome -->
+    <script src="https://kit.fontawesome.com/14c6874853.js" crossorigin="anonymous"></script>
+
+    <!-- ICONOS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet" />
+
+    <!-- TITULO DE PAGINA -->
+    <title>Busqueda de Rutinas - RunApp</title>
+
+    <!-- ARCHIVOS -->
+    <link rel="stylesheet" href="../css/pages/busquedaRutinas/busquedaRutinas.css" />
+    <link rel="stylesheet" href="../css/pages/busquedaRutinas/busquedaRutinasTablet.css" />
+    <link rel="stylesheet" href="../css/pages/busquedaRutinas/busquedaRutinasWeb.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/shared/footer.css" />
+    <link rel="stylesheet" href="../css/shared/body.css" />
+    <link rel="stylesheet" href="../css/shared/header.css" />
+    <link rel="stylesheet" href="../css/shared/headerTabletWeb.css" />
+    <link rel="stylesheet" href="../css/shared/card.css" /> 
+    <link rel="stylesheet" href="../css/shared/iconos.css" />
+
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1 class="title">RunApp</h1>
+        <div class="menu">
+            <button class="desplegable">
+                <i class="fas fa-bars icono"></i>
+            </button> 
+            <nav class="menu-contenido">
+                <a class="menu-link" href="./busquedaRutinas.html">Home</a>
+                <a class="menu-link" href="./misRutinas.html">Mis Rutinas</a>
+                <a class="menu-link" href="./usuario.html">Perfil</a>
+                <a class="menu-link" href="../login.html">
+                    <i class="fas fa-sign-out-alt icono" id="logoff"></i>
+                </a>
+            </nav>
+            <nav class="menu-web">
+                <a class="menu-link-web" href="./busquedaRutinas.html">Home</a>
+                <a class="menu-link-web" href="./misRutinas.html">Mis Rutinas</a>
+                <a class="menu-link-web" href="./usuario.html">Perfil</a>
+                <a class="menu-link-web" href="../login.html">
+                    <i id="logoff-web" class="fas fa-sign-out-alt icono"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SEARCHBAR -->
+    <form class="searchbar">
+        <input class="searchbar__input" type="text" placeholder="Buscar" />
+        <div class="buscar">
+            <i class="fas fa-search"></i>
+        </div>
+    </form>
+    <section class="ventana">
+        <!-- BARRA RESULTADOS -->
+        <div class="ventana-title">
+            <p class="p-mobile">Resultados</p>
+            <p class="p-web">Resultados de busqueda</p>
+            <div>
+                <i class="fas fa-search" id="iconoMini"></i>
+                Total: 5
+            </div>
+        </div>
+
+        <!-- RESULTADOS DE RUTINAS --> 
+        <div>
+            <a class="container" href="/runapp-grupo3/src/rutinas.html">
+                <div class="container__contenido">
+                    <div class="container__separador-web">
+                        <div class="container__contenido-title">
+                            <h1 class="container__title">Isquiotibiales</h1>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>59 minutos</p>
+                        <p class="autor-mobile">Por Eduardo Gomez</p>
+                    </div>
+                    <p class="autor-web">Por Eduardo Gomez</p>
+                    <div class="container__contenido-iconos">
+                        <i class="fas fa-trash-alt icono-animado"></i>
+                        <i class="fas fa-pen icono-animado"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a class="container" href="/runapp-grupo3/src/rutinas.html">
+                <div class="container__contenido">
+                    <div class="container__separador-web">
+                        <div class="container__contenido-title">
+                            <h1 class="container__title">Rutina 2</h1>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>80 minutos</p>
+                        <p class="autor-mobile">Por Martín Cabrera</p>
+                    </div>
+                    <p class="autor-web">Por Martín Cabrera</p>
+                    <div class="container__contenido-iconos">
+                        <i class="fas fa-trash-alt icono-animado"></i>
+                        <i class="fas fa-pen icono-animado"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a class="container" href="/runapp-grupo3/src/rutinas.html">
+                <div class="container__contenido">
+                    <div class="container__separador-web">
+                        <div class="container__contenido-title">
+                            <h1 class="container__title">Mi Rutina</h1>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>66 minutos</p>
+                        <p class="autor-mobile">Por Marco Polo</p>
+                    </div>
+                    <p class="autor-web">Por Marco Polo</p>
+                    <div class="container__contenido-iconos">
+                        <i class="fas fa-trash-alt icono-animado"></i>
+                        <i class="fas fa-pen icono-animado"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a class="container" href="/runapp-grupo3/src/rutinas.html">
+                <div class="container__contenido">
+                    <div class="container__separador-web">
+                        <div class="container__contenido-title">
+                            <h1 class="container__title">Rutini</h1>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>55 minutos</p>
+                        <p class="autor-mobile">Por Horacio Guaraní</p>
+                    </div>
+                    <p class="autor-web">Por Horacio Guaraní</p>
+                    <div class="container__contenido-iconos">
+                        <i class="fas fa-trash-alt icono-animado"></i>
+                        <i class="fas fa-pen icono-animado"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a class="container" href="/runapp-grupo3/src/rutinas.html">
+                <div class="container__contenido">
+                    <div class="container__separador-web">
+                        <div class="container__contenido-title">
+                            <h1 class="container__title">Pecho</h1>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>5 minutos</p>
+                        <p class="autor-mobile">Por Gastón Rodriguez</p>
+                    </div>
+                    <p class="autor-web">Por Gastón Rodriguez</p>
+                    <div class="container__contenido-iconos">
+                        <i class="fas fa-trash-alt icono-animado"></i>
+                        <i class="fas fa-pen icono-animado"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+        
+        <!-- FOOTER -->
+        <footer>
+            <i class="fab fa-facebook-square"></i>
+            <div>RunApp/2021</div>
+        </footer>
+    </body>
+    
+    </html>

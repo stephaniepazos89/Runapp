@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://kit.fontawesome.com/14c6874853.js" crossorigin="anonymous"></script>
+    <!-- iconos FontsAwesome -->
+
+    <!--TIPOS DE LETRA:-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@600&family=Roboto:wght@400;500;900&display=swap"
+        rel="stylesheet" />
+
+    <title>Rutinas - RunApp</title>
+
+    <!--ESTILOS GLOBALES DE LA APLICACION:-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/shared/footer.css" />
+    <link rel="stylesheet" href="../css/shared/body.css" />
+    <link rel="stylesheet" href="../css/shared/button.css" />
+    <link rel="stylesheet" href="../css/shared/header.css" />
+    <link rel="stylesheet" href="../css/shared/headerTabletWeb.css" />
+    <link rel="stylesheet" href="../css/shared/card.css" />
+    <link rel="stylesheet" href="../css/shared/gruposMusculares.css" />
+    <link rel="stylesheet" href="../css/shared/fuentes.css" />
+    <link rel="stylesheet" href="../css/shared/inputBase.css" />
+    <link rel="stylesheet" href="../css/shared/iconos.css" />
+
+
+    <!--ESTILOS PROPIOS DE RUTINAS-->
+    <link rel="stylesheet" href="../css/pages/rutinas/rutinas.css" />
+    <link rel="stylesheet" href="../css/pages/rutinas/tamaños.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="title">RunApp</h1>
+        <div class="menu">
+            <button class="desplegable">
+                <i class="fas fa-bars icono"></i>
+            </button>
+            <nav class="menu-contenido">
+                <a class="menu-link" href="./busquedaRutinas.html">Home</a>
+                <a class="menu-link" href="./misRutinas.html">Mis Rutinas</a>
+                <a class="menu-link" href="./usuario.html">Perfil</a>
+                <a class="menu-link" href="../login.html">
+                    <i class="fas fa-sign-out-alt icono" id="logoff"></i>
+                </a>
+            </nav>
+            <nav class="menu-web">
+                <a class="menu-link-web" href="./busquedaRutinas.html">Home</a>
+                <a class="menu-link-web" href="./misRutinas.html">Mis Rutinas</a>
+                <a class="menu-link-web" href="./usuario.html">Perfil</a>
+                <a class="menu-link-web" href="../login.html">
+                    <i id="logoff-web" class="fas fa-sign-out-alt icono"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <form>
+        <div class="ventana-title">
+            <p class="p-default">Isquiotibiales</p>
+            <p class="rutina-subtitulo__p">Por Evaristo Hurtado</p>
+        </div>
+        <section class="form__section--principal">
+            <section class="rutina-registro">
+                <div class="inputSeparador">
+                    <label class="inputLabel">Nombre</label>
+                    <input class="inputBase campo"  type="text" placeholder="Ingrese el nombre de la rutina aquí" />
+                </div>
+                <div class="inputSeparador">
+                    <label class="inputLabel">Descripcion</label>
+                    <input  class="inputBase campo" type="text" placeholder="Describa la rutina aquí" />
+                </div>
+                <div class="inputSeparador">
+                    <label class="inputLabel">Estrategia de edicion</label>
+                    <select  class="inputBase campo" name="estrategia-edicion">
+                        <option value="estrategia_1">Estrategia 1</option>
+                        <option value="estrategia_2">Estrategia 2</option>
+                        <option value="estrategia_3">Estrategia 3</option>
+                        <option value="estrategia_4">Estrategia 4</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="rutina-ejercicios">
+                <h4 class="form-subtitulo">Ejercicios</h4>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <td class="table-head__fila">Nombre</td>
+                            <td class="table-head__fila">Minutos</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td href="/runapp-grupo3/src/rutinas.html" class="table-body__fila">Isquiotibiales</td>
+                            <td class="table-body__fila">
+                                <div class="contenedor-tiempo">
+                                    <p id="minutos">24</p> <i class="fas fa-trash-alt"></i>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="rutina-estadisticas">
+                    <i class="fas fa-heartbeat"></i>
+                    <p class="rutina-estadisticas__p">200 PPM</p>
+                    <i class="fas fa-stopwatch"></i>
+                    <p class="rutina-estadisticas__p">63'</p>
+                    <div class="button-mas-container"><button class="button-mas">+</button></div>
+                </div>
+            
+                    
+                
+                <h4 class="form-subtitulo">Grupos Musculares</h4>
+                <div class="grupos-flex">
+                    <div class="form-section-grupoM">
+                        <input class="button__input" type="checkbox" id="Piernas">
+                        <label class="checkButton" for="Piernas">Piernas</label>
+                        <input class="button__input" type="checkbox" id="Hombros">
+                        <label class="checkButton" for="Hombros">Hombros</label>
+                        <input class="button__input" type="checkbox" id="Brazos">
+                        <label class="checkButton" for="Brazos">Brazos</label>
+                        <input class="button__input" type="checkbox" id="Pecho">
+                        <label class="checkButton" for="Pecho">Pecho</label>
+                        <input class="button__input" type="checkbox" id="Espalda">
+                        <label class="checkButton" for="Espalda">Espalda</label>
+                        <input class="button__input" type="checkbox" id="Gluteos">
+                        <label class="checkButton" for="Gluteos">Gluteos</label>
+                    </div>
+                </div>
+            
+            </section>
+        </section>
+        <div class="posicion-botones">
+            <button class="button-cancelar">
+                <a class="boton-sin-decoracion-cancelar" href="./misRutinas.html">Cancelar</a>
+            </button>
+            <button class="button-guardar">
+                <a class="boton-sin-decoracion-guardar" href="./misRutinas.html">Guardar</a>
+            </button>
+        </div>
+    </form>
+
+    <footer>
+        <i class="fab fa-facebook-square"></i>
+        <div>RunApp/2021</div>
+    </footer>
+</body>
+
+</html>

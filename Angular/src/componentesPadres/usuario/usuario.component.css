@@ -1,0 +1,183 @@
+.contenido-flex {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+}
+
+.ventana-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    color: var(--color-quinario);
+    font-size: 1.2rem;
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    min-width: 280px;
+}
+
+.header-informacion {
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.card-contenido-usuario {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.box-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-subtitulo {
+    font-size: 1.8rem;
+    margin-left: 7px;
+    margin-bottom: 1rem;
+}
+
+.mis-datos {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.inputLabel {
+    font-size: 1.5rem;
+    margin-left: 7px;
+    margin-bottom: 5px;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.card-usuario {
+    max-width: none;
+}
+
+.grupos-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.dias-de-entrenamiento {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dias-de-entrenamiento-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 500px;
+}
+
+.form-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-self: center;
+    flex-direction: column;
+}
+
+.form-content-misDatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.tiempo-minutos {
+    display: flex;
+    justify-content: center;
+}
+
+.agregar-elemento {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+}
+
+.tamaño-input {
+    width: 100%;
+}
+
+.tamaño-marcador {
+    max-width: 80px;
+    gap: 20rem;
+}
+
+.dia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+}
+
+.semana {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+#Lunes:checked~label[for="Lunes"],
+#Martes:checked~label[for="Martes"],
+#Miercoles:checked~label[for="Miercoles"],
+#Jueves:checked~label[for="Jueves"],
+#Viernes:checked~label[for="Viernes"],
+#Sabado:checked~label[for="Sabado"],
+#Domingo:checked~label[for="Domingo"] {
+    background-color: var(--color-primario);
+    color: var(--color-quinario);
+    font-weight: bold;
+}
+
+.inputBase {
+    font-size: 1.4rem;
+}
+
+.button-agregar {
+    padding: 0.5em 1em;
+}
+
+.cards-amistad {
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+}
+
+.minicard-informacion {
+    justify-content: space-evenly;
+    border-radius: 2rem;
+    background-color: var(--color-quinario);
+}
+
+.info-rutina {
+    font-size: 1.5rem;
+    height: 7rem;
+}

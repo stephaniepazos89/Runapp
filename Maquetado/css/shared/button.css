@@ -1,0 +1,67 @@
+a{
+    text-decoration: none;
+    color: var(--color-quinario);
+    font-weight: bold;
+}
+
+.button-guardar,
+.button-cancelar,
+.button-agregar,
+.button-ingresar,
+.button-mas{
+    background-color:var(--color-primario) ;
+    border: none;
+    color:var(--color-quinario);
+    padding: 1em 1.4em;
+    text-align: center;
+    font-size: 1.8em;
+    border-radius: 5rem;
+    box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,0.24);
+    font-family: "Roboto",sans-serif;
+}
+
+.button-cancelar{
+    background-color: var(--color-quinario);
+    color: var(--color-primario);
+    border-style: solid;
+    border-width: 0.2rem;    
+}
+
+.boton-sin-decoracion-cancelar{
+    text-decoration: none;
+    color: var(--color-primario);
+}
+
+.button-ingresar{
+    background-color: var(--color-secundario);
+}
+
+.button-cancelar:hover{
+    background-color: rgb(209, 202, 202);
+}
+
+.posicion-botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+.button-guardar:hover,
+.button-agregar:hover,
+.button-ingresar:hover,
+.button-mas:hover{
+    background-color: #286C96;
+}
+
+.container__button{
+    display: flex;
+    justify-content:center;
+    gap: 3rem;
+}

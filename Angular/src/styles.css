@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primario: #003A64;
+    --color-secundario: #54A2D2;
+    --color-terciario: #A9CEE8;
+    --color-cuaternario: #E1ECF0;
+    --color-quinario: white;
+    --color-auxiliar1: rgb(111, 133, 133);
+    --footer-height: 88px;
+}
+
+html {
+    font-size: 10px;
+    min-height: 100%;
+    position: relative;
+    background-color: var(--color-cuaternario);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 88px;
+    margin-top: 124px;
+    background-color: var(--color-cuaternario);
+}
+/* ---------------------------------------------------------------- */
+/* Barra busqueda */
+.barra-busqueda{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color-terciario);
+}
+
+.buscar{
+    width: 100%;
+    max-width: 1300px;
+    height: 30px;
+    margin: 15px 0;
+}
+
+/* ---------------------------------------------------------------- */
+
+
+/* Ventana "Card" */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-color: grey;
+    border-style: solid;
+    border-radius: 1rem;
+    background-color: var(--color-cuaternario);
+    width: 100%;
+    min-width: 280px;
+    max-width: 1300px;
+    margin: 2.5rem;
+}
+
+.card-barra {
+    display: flex;
+    background-color: gray;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-barra-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-barra-texto1 {
+    font-size: 3.5rem;
+}
+
+.card-barra-texto2 {
+    font-size: 2rem;
+}
+
+.card-barra-icono {
+    font-size: 3rem;
+    padding: 5px;
+}
+
+.fa-trash-alt{
+    color: darkred;
+}
+
+.card-contenido {
+    display: flex;
+    padding: 2.5rem;
+}
+
+
+/* ---------------------------------------------------------------- */
+
+
+/* BusquedaRutinas & MisRutinas */
+
+.card-contenido-rutinas {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.info-rutina {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 120px;
+    width: 85%;
+    padding: 10px;
+    font-size: 30px;
+    background-color: var(--color-terciario);
+    border-radius: 10px;
+    border-color: var(--color-primario);
+    border-style: solid;
+}
+
+.info-rutina-center{
+    font-size: 30px;
+}
+.info-rutina-left{
+    font-size: 35px;
+}
+.info-rutina-right{
+    gap: 10px;
+}
+
+
+
+/* ---------------------------------------------------------------- */
+
+
+/*botones*/
+
+.button-primario,
+.button-secundario,
+.button-agregar,
+.button-login,
+.button-mas {
+    background-color: var(--color-primario);
+    border: none;
+    color: var(--color-quinario);
+    padding: 1em 1.4em;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 5rem;
+    box-shadow: 0 0.5em 0.5em 0 rgba(0, 0, 0, 0.24);
+    font-family: "Roboto", sans-serif;
+}
+
+.button-secundario {
+    background-color: var(--color-quinario);
+    color: var(--color-primario);
+    border-style: solid;
+    border-width: 0.2rem;
+}
+
+.button-secundario>a {
+    text-decoration: none;
+    color: var(--color-primario);
+}
+
+.button-login {
+    background-color: var(--color-secundario);
+}
+
+.button-secundario:hover {
+    background-color: rgb(209, 202, 202);
+}
+
+.posicion-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.button-primario:hover,
+.button-agregar:hover,
+.button-login:hover,
+.button-mas:hover {
+    background-color: #286C96;
+}
+
+
+/*input*/
+
+.inputBase {
+    width: 100%;
+    height: 2.3em;
+    border: 0.5rem solid var(--color-primario);
+    border-radius: 0.8em;
+    padding-left: 1em;
+    font-size: 1.7rem;
+    color: grey;
+}
+
+.inputBase:focus {
+    outline: none;
+}
+
+.inputSeparador {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.campo {
+    border-style: solid;
+    border-width: 0.28em;
+    border-color: var(--color-primario);
+    border-radius: 1.3em;
+}
+
+
+/* ---------------------------------------------------------------- */
+
+
+/*Grupos Musculares*/
+
+.form-section-grupoM {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 3rem;
+}
+
+#Piernas:checked~label[for="Piernas"],
+#Hombros:checked~label[for="Hombros"],
+#Brazos:checked~label[for="Brazos"],
+#Pecho:checked~label[for="Pecho"],
+#Espalda:checked~label[for="Espalda"],
+#Gluteos:checked~label[for="Gluteos"] {
+    background-color: var(--color-primario);
+    color: var(--color-quinario);
+    font-weight: bold;
+}
+
+.button__input {
+    display: none;
+}
+
+.checkButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    cursor: pointer;
+    background-color: var(--color-quinario);
+    border-style: solid;
+    border-color: var(--color-primario);
+    border-width: 0.2rem;
+    border-radius: 4rem;
+    color: var(--color-primario);
+    padding: 0.5rem 0.1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 200ms linear;
+}
+
+.checkButton-dia {
+    width: 100%;
+}
+
+.checkButton:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,49 @@
+.minicard-informacion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: var(--color-primario);
+  border-radius: 2rem;
+  background-color: red;
+}
+
+
+/* .minicard-informacion{
+    justify-content: space-evenly;
+    
+    border-style: solid;
+    border-color: var(--color-primario);
+    border-radius: 2rem;
+    background-color: var(--color-quinario);
+    padding:1rem;
+  }
+  .amistad{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+  }
+
+  .icono-animado{
+    cursor: pointer;
+    transition: color 200ms linear,transform 200ms linear;
+  }
+  
+  .icono-animado:hover{
+    transform: scale(1.1);
+  }
+  
+  .fa-trash-alt {
+      font-size: 2.8rem;
+      color: rgb(184, 0, 0);
+    }
+  
+  .fa-trash-alt:hover{
+      font-size: 2.8rem;
+      color: rgb(228, 93, 93);    
+  }
+  
+  .chino{
+    height: 50px;
+  } */
+  

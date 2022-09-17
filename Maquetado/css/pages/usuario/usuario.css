@@ -1,0 +1,312 @@
+img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 2.5rem;
+}
+
+.nombre {
+  font-size: 3rem;
+}
+
+.encabezado {
+  gap: 20px;
+  padding:1rem;
+}
+
+.header-informacion, .minicard-informacion {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  
+}
+
+.minicard-informacion{
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  border-style: solid;
+  border-color: var(--color-primario);
+  border-radius: 2rem;
+  background-color: var(--color-quinario);
+  padding:1rem;
+}
+
+.header-tiempo {
+  font-size: 1.8rem;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.form-subtitulo {
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  margin-top:1rem;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container__button {
+  gap: 4rem;
+   margin-bottom: 2em;
+}
+
+.button {
+  padding: 0.5rem 1.4rem;
+  width: 35%;
+}
+
+#Lunes:checked ~ label[for="Lunes"],
+#Martes:checked ~ label[for="Martes"],
+#Miercoles:checked ~ label[for="Miercoles"],
+#Jueves:checked ~ label[for="Jueves"],
+#Viernes:checked ~ label[for="Viernes"],
+#Sabado:checked ~ label[for="Sabado"],
+#Domingo:checked ~ label[for="Domingo"] {
+  background-color: var(--color-primario);
+  color: var(--color-quinario);
+  font-weight: bold;
+}
+
+.checkButton:hover {
+  cursor: pointer;
+  /* background-color: var(--color-primario); <---- Esto da problemas */
+}
+
+.semana {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  justify-content: center;
+  
+}
+
+.dia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50%;
+}
+
+.tiempo-minutos {
+  display: flex;
+}
+
+.amigos-lista {
+  padding: 1rem;
+  border-radius: 0.9rem;
+  background-color: var(--color-quinario);
+  border-style: solid;
+  border-color: var(--color-primario);
+  
+}
+
+.input-minutos{
+  width: 70%;
+}
+
+.input-amigos{
+  width:60%;
+}
+
+.agregar-elemento{
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.amistad{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+
+.fa-trash-alt {
+  font-size: 2.8rem;
+}
+
+.form-section-grupoM{
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.inputBase{
+  height:2.5em;
+}
+/* ========================================================= */
+
+/*                    MODO MOBILE */
+
+/* ========================================================= */
+
+@media (max-width: 400px) {
+  .card {
+    margin-top: 0;
+  }
+  .card__content {
+    min-width: 100%;
+  }
+  .encabezado {
+    border-radius: 0;
+  }
+
+  .button-aceptar,.button-cancelar{
+    padding:1.1rem 2.1rem;
+  }
+}
+
+/* ========================================================= */
+
+/*                    MODO TABLET */
+
+/* ========================================================= */
+
+@media (min-width:401px){
+  .card{
+      margin-top: 0;
+  }
+
+  .card__content{
+    min-width: 100%;
+  }
+
+  .encabezado {
+    border-radius: 0;
+   
+  }
+
+  .form-section{
+    padding:2rem;
+  }
+
+ .minicard-informacion{
+   justify-content: start;
+ }
+
+ .amistad{
+   margin-right: 3rem;
+ }
+
+ .card2,.card1{
+   display: flex;
+   flex-direction: column;
+ }
+
+ .cards-amistad{
+   display: flex;
+   flex-direction: row;
+   gap:7rem;
+ }
+
+ .semana {
+  display: flex;
+  flex-direction: row;
+}
+
+.ventana_title{
+  padding:1rem;
+}
+
+.amigos-lista{
+  width: 70%;
+  font-size: 1.4rem;
+}
+
+.container__button{
+  gap:4rem;
+}
+ 
+}
+
+/* ========================================================= */
+
+/*                    MODO WEB */
+
+/* ========================================================= */
+
+@media (min-width:769px){
+   
+  .container__button, .form-section-grupoM{
+    gap:0.5rem;  
+  }
+
+  .ventana{
+    max-width: 90%;
+    max-height: 50%;
+  }
+
+  .super-card{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-section-grupoM{
+    justify-content: flex-start;
+    margin-left: 2rem;
+  }
+
+  .semana{
+    display: flex;
+    justify-content: flex-start; 
+  }
+
+  .dias-de-entrenamiento{
+    justify-content: center;
+    width: 60%;
+  }
+
+  .seccion{
+    width: 35%;
+  }
+
+  .seccion-amigos{
+    width: 40%;
+  }
+
+  .cards-amistad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 30vh;
+    margin-top: 2rem;
+  }
+
+  .card1, .card2{
+    width: 100%;
+  }
+  
+  .minicard-informacion{
+    justify-content: space-around;
+  }
+
+  .dia{
+    row-gap: 0.5rem;
+    width: calc(100px + 15%);
+  }
+
+  .posicion-botones{
+    justify-content: flex-end;
+    margin-right: 4rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+} 
